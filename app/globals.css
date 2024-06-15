@@ -502,10 +502,38 @@ ul li .links {
   }
 }
 @media only screen and (min-width: 1200px) {
+  .hero-section {
+    height: calc(100vh - 14.4rem);
+  }
   .wrapper {
     max-width: 110rem;
   }
   .hero {
     justify-content: space-between;
+  }
+  .hero h1 {
+    font-size: 7.2rem;
+    margin-bottom: 3.5rem;
+  }
+  .social-flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .social-text h2 {
+    text-align: left;
+  }
+  .social-text {
+    display: grid;
+  }
+  .social-text p {
+    text-align: left;
+  }
+  .social-text button {
+    justify-self: flex-start;
+  }
+  .social-companies {
+    height: 11rem;
+    align-self: center;
+    margin-bottom: 0;
   }
 }
