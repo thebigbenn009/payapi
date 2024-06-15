@@ -353,8 +353,8 @@ ul li .links {
     width: 20rem;
   }
   .demo-input {
-    padding-top: 1.6rem;
-    padding-bottom: 1.4rem;
+    /* padding-top: 1.6rem; */
+    /* padding-bottom: 1.4rem; */
     padding-left: 2.7rem;
   }
   /* SOCIAL SECTION */
