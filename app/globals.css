@@ -546,4 +546,50 @@ ul li .links {
   .easy-img {
     width: 100%;
   }
+  .e {
+    display: grid;
+    place-items: center;
+  }
+  .easy-text {
+    margin-bottom: 0;
+  }
+  .easy-text h2 {
+    text-align: left;
+  }
+  .easy-text p {
+    width: 44.5rem;
+    margin-inline: 0;
+    text-align: left;
+    padding-inline: 0;
+  }
+  .section-ui {
+    display: grid;
+    grid-template-columns: 44.5rem 1fr;
+    padding-top: 15.1rem;
+  }
+  .ui-text {
+    display: flex;
+    flex-direction: column;
+    margin-block: auto;
+  }
+  .ui-text p {
+    width: 100%;
+    text-align: left;
+  }
+  .section-ui h2 {
+    font-size: 4.8rem;
+    text-align: left;
+  }
+  .ui-img > svg > g {
+    transform: translateX(-1vw);
+  }
+  .demo-form {
+    margin-bottom: 0;
+    margin-inline: 0;
+    align-self: center;
+  }
+  .cta h2 {
+    margin-bottom: 0;
+    font-size: 4.8rem;
+  }
 }
