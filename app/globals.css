@@ -588,8 +588,16 @@ ul li .links {
     margin-inline: 0;
     align-self: center;
   }
+  .cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .cta h2 {
     margin-bottom: 0;
     font-size: 4.8rem;
+  }
+  .f-links {
+    color: var(--primary-white) !important;
   }
 }

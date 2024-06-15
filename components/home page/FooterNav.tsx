@@ -92,7 +92,7 @@ const FooterNav = () => {
           {links.map((link) => {
             return (
               <li key={link.label}>
-                <Link className="links" href={link.href}>
+                <Link className="links f-links" href={link.href}>
                   {link.label}
                 </Link>
               </li>
