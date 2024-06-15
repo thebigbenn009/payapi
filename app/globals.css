@@ -536,4 +536,14 @@ ul li .links {
     align-self: center;
     margin-bottom: 0;
   }
+  .social-flex {
+    padding-top: 11rem;
+  }
+
+  .easy-container {
+    grid-template-columns: 44.5rem 1fr;
+  }
+  .easy-img {
+    width: 100%;
+  }
 }
