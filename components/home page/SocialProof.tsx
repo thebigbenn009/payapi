@@ -1,6 +1,7 @@
 import { svgs } from "@/SocialSvgs";
 import React from "react";
-
+import socials from "@/public/home/desktop/socials.svg";
+import Image from "next/image";
 const SocialProof = () => {
   return (
     <section className="social-section">
@@ -15,7 +16,10 @@ const SocialProof = () => {
           </p>
           <button className="btn btn-small">About us</button>
         </div>
-        <div className="social-companies">
+        <div className="socials-img">
+          <Image src={socials} alt="socials" />
+        </div>
+        {/* <div className="social-companies">
           {svgs.map((svg, index) => {
             return (
               <div className="social-icons" key={index}>
@@ -23,7 +27,7 @@ const SocialProof = () => {
               </div>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </section>
   );

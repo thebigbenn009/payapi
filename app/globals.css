@@ -72,6 +72,9 @@ body {
   display: flex;
   flex-direction: column-reverse;
 }
+.hero-phone {
+  transform: translateX(8vw);
+}
 .hero-img svg {
   width: 100%;
 }
@@ -92,7 +95,9 @@ body {
 .hero-text h1 {
   margin-bottom: 2.4rem;
 }
-
+.hero-img {
+  overflow: hidden;
+}
 .hero-img > svg > g {
   transform: translateX(10px);
 }
@@ -160,6 +165,7 @@ input:focus {
   display: flex;
   flex-direction: column-reverse;
   padding-block: 8rem;
+  gap: 5.6rem;
 }
 .social-companies {
   display: grid;

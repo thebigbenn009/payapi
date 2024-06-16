@@ -154,6 +154,12 @@ ul {
 .hero-text h1 {
   margin-bottom: 4rem;
 }
+.hero-phone {
+  transform: translateX(10px);
+}
+.hero-img {
+  overflow: hidden;
+}
 .demo-form {
   width: 44.5rem;
   display: flex;
@@ -190,10 +196,12 @@ input:focus {
 .social-flex {
   display: flex;
   justify-content: space-between;
+  gap: 5.6rem;
 
   gap: 13.1rem;
   padding-block: 16.5rem;
 }
+
 .social-companies {
   align-self: center;
   flex: 1;
