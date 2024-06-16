@@ -17,7 +17,7 @@ const Hero = () => {
             <Image
               className="hero-phone"
               src={phone}
-              height={290}
+              // height={290}
               alt="phone"
             />
           </div>
