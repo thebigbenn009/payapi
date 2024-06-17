@@ -1,6 +1,7 @@
 import { svgs } from "@/SocialSvgs";
 import React from "react";
 import socials from "@/public/home/desktop/socials.svg";
+import socialsTab from "@/public/home/desktop/socials-tab.svg";
 import Image from "next/image";
 const SocialProof = () => {
   return (
@@ -17,7 +18,8 @@ const SocialProof = () => {
           <button className="btn btn-small">About us</button>
         </div>
         <div className="socials-img">
-          <Image src={socials} alt="socials" />
+          <Image src={socials} alt="socials" className="socials-mobile" />
+          <Image src={socialsTab} alt="socials" className="socials-tab" />
         </div>
         {/* <div className="social-companies">
           {svgs.map((svg, index) => {

@@ -2,7 +2,7 @@ import React from "react";
 
 const ScheduleDemo = () => {
   return (
-    <form className="demo-form cta-form hero-form">
+    <form className="demo-form cta-form form-f">
       <input
         className="demo-input"
         type="email"

@@ -1,11 +1,13 @@
 import React from "react";
 import twoPhones from "@/public/home/desktop/two-phones.svg";
+import simpleUIPhone1 from "@/public/home/desktop/simple-ui-phone-1.svg";
+import simpleUIPhone2 from "@/public/home/desktop/simple-ui-phone-2.svg";
 import Image from "next/image";
 
 const SimpleUI = () => {
   return (
-    <div className="section-bg">
-      <section className="section-ui wrapper">
+    <div className="">
+      <section className="section-ui wrapper section-bg">
         <div className="ui-text">
           <h2>Simple UI & UX</h2>
           <p>
@@ -21,6 +23,22 @@ const SimpleUI = () => {
             width={320}
             // layout="fill"
             objectFit="cover"
+          />
+          <Image
+            className="desktop-phones phone-1"
+            src={simpleUIPhone1}
+            alt="two phones"
+            objectFit="cover"
+            // width={500}
+            height={500}
+          />
+          <Image
+            className="desktop-phones"
+            src={simpleUIPhone2}
+            alt="two phones"
+            objectFit="cover"
+            // width={500}
+            height={500}
           />
         </div>
       </section>
