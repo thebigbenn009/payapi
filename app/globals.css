@@ -91,6 +91,7 @@ body {
 }
 .hero-text {
   margin-top: -8.2rem;
+  padding-bottom: 8rem;
 }
 .hero-text > * {
   text-align: center;
@@ -164,6 +165,9 @@ input:focus {
   background-color: var(--secondary-mirage-blue);
   color: var(--primary-white);
 }
+.social-img {
+  text-align: center;
+}
 .social-flex {
   display: flex;
   flex-direction: column-reverse;
@@ -207,29 +211,39 @@ input:focus {
 .ui-img > svg {
   width: 100%;
 }
+.section-easy {
+  margin-bottom: 11rem;
+}
+.two-phones {
+  transform: translateY(-4rem);
+}
 /* EASY TO IMPLEMENT */
 .easy-container {
   display: grid;
   gap: 4.8rem;
+  grid-template-rows: 21rem 1fr;
 }
 .easy-container > * {
   text-align: center;
 }
 
-.easy-img > svg {
+/* .easy-img > svg {
   width: 100%;
-}
+} */
 
 .easy-img > svg > g {
   transform: translate(-53px, -103px);
 }
 .easy-text {
-  margin-bottom: 8rem;
+  /* margin-bottom: 8rem; */
 }
 .easy-text p {
   color: var(--secondary-light-blue);
 }
-.easy-img > svg > g > text
+.easy-img img {
+  object-fit: cover;
+  transform: translateY(-22px);
+}
 
 /* SIMPLE UI */
 .section-ui {
@@ -245,6 +259,9 @@ input:focus {
 }
 .ui-img > svg {
   height: 56.5rem;
+}
+.ui-img {
+  height: 29rem;
 }
 /* GOALS SECTION */
 

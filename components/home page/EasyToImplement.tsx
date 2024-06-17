@@ -1,11 +1,14 @@
 import React from "react";
+import code from "@/public/home/desktop/code.svg";
+import Image from "next/image";
 
 const EasyToImplement = () => {
   return (
     <section className="section-easy">
       <div className="wrapper easy-container">
         <div className="easy-img">
-          <svg
+          <Image src={code} alt="code" width={300} />
+          {/* <svg
             width="605"
             height="444"
             xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +97,7 @@ const EasyToImplement = () => {
                 </tspan>
               </text>
             </g>
-          </svg>
+          </svg> */}
         </div>
         <div className="e">
           <div className="easy-text">
