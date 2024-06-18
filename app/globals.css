@@ -228,6 +228,7 @@ input:focus {
 .two-phones {
   transform: translateY(-4rem);
   width: 100%;
+  height: auto;
   object-fit: cover;
 }
 /* EASY TO IMPLEMENT */
@@ -560,6 +561,8 @@ ul li .links {
   }
   .hero-text h1 {
     text-align: left;
+    width: 75%;
+    align-self: flex-start;
   }
   .demo-form {
     margin-left: 0;
@@ -667,6 +670,9 @@ ul li .links {
   .hero h1 {
     font-size: 7.2rem;
     margin-bottom: 3.5rem;
+  }
+  .hero-text h1 {
+    width: 100%;
   }
   .hero-form {
     align-self: flex-start;

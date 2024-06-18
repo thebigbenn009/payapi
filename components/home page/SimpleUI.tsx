@@ -20,7 +20,7 @@ const SimpleUI = () => {
             className="two-phones"
             src={twoPhones}
             alt="two phones"
-            width={320}
+            width={230}
             // layout="fill"
             objectFit="cover"
           />

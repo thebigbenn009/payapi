@@ -32,7 +32,7 @@ const Hero = () => {
             <Image
               className="phone-desktop"
               src={phoneDesktop}
-              width={263}
+              width={450}
               // height={600}
               alt="phone"
             />
