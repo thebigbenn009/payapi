@@ -21,7 +21,7 @@ const Goals = () => {
           );
         })}
       </div>
-      {/* <Cta /> */}
+      <Cta />
     </section>
   );
 };
