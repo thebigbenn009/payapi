@@ -1,5 +1,5 @@
 import React from "react";
-import { Goal } from "./app/types";
+import { Goal, PricingPackages } from "./app/types";
 import { Icons } from "@/app/types";
 export const svgs = [
   {
@@ -204,6 +204,109 @@ export const icons: Icons[] = [
           d="M21.6 0H2.4C1.08 0 0 1.08 0 2.4v19.2C0 22.92 1.08 24 2.4 24h19.2c1.32 0 2.4-1.08 2.4-2.4V2.4C24 1.08 22.92 0 21.6 0zM7.2 20.4H3.6V9.6h3.6v10.8zM5.4 7.56c-1.2 0-2.16-.96-2.16-2.16 0-1.2.96-2.16 2.16-2.16 1.2 0 2.16.96 2.16 2.16 0 1.2-.96 2.16-2.16 2.16zm15 12.84h-3.6v-6.36c0-.96-.84-1.8-1.8-1.8-.96 0-1.8.84-1.8 1.8v6.36H9.6V9.6h3.6v1.44c.6-.96 1.92-1.68 3-1.68 2.28 0 4.2 1.92 4.2 4.2v6.84z"
           fill="#FFF"
           fill-rule="nonzero"
+        />
+      </svg>
+    ),
+  },
+];
+export const pricePackages: PricingPackages = [
+  {
+    plan: "free plan",
+    price: 0.0,
+    packages: [
+      "Transactions",
+      "Auth",
+      "Identity",
+      "Investments",
+      "Assets",
+      "Liabilities",
+      "Income",
+    ],
+    availablePackages: ["Transactions", "Auth", "Identity"],
+    icon: (
+      <svg
+        width="14"
+        height="11"
+        viewBox="0 0 14 11"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1 5.71804L4.89327 9.56006L13 1.56006"
+          stroke="#BA4270"
+          stroke-width="2"
+        />
+      </svg>
+    ),
+  },
+  {
+    plan: "basic plan",
+    price: 299.0,
+    packages: [
+      "Transactions",
+      "Auth",
+      "Identity",
+      "Investments",
+      "Assets",
+      "Liabilities",
+      "Income",
+    ],
+    availablePackages: [
+      "Transactions",
+      "Auth",
+      "Identity",
+      "Investments",
+      "Assets",
+    ],
+    icon: (
+      <svg
+        width="14"
+        height="11"
+        viewBox="0 0 14 11"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1 5.71804L4.89327 9.56006L13 1.56006"
+          stroke="#BA4270"
+          stroke-width="2"
+        />
+      </svg>
+    ),
+  },
+  {
+    plan: "premium plan",
+    price: 499.0,
+    packages: [
+      "Transactions",
+      "Auth",
+      "Identity",
+      "Investments",
+      "Assets",
+      "Liabilities",
+      "Income",
+    ],
+    availablePackages: [
+      "Transactions",
+      "Auth",
+      "Identity",
+      "Investments",
+      "Assets",
+      "Liabilities",
+      "Income",
+    ],
+    icon: (
+      <svg
+        width="14"
+        height="11"
+        viewBox="0 0 14 11"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1 5.71804L4.89327 9.56006L13 1.56006"
+          stroke="#BA4270"
+          stroke-width="2"
         />
       </svg>
     ),

@@ -764,3 +764,64 @@ ul li .links {
     max-width: 130rem;
   }
 }
+
+/* ABOUT PAGE */
+.pricing-h2 {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.available,
+.unavailable {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.available span {
+  justify-self: flex-start;
+}
+.unavailable {
+  padding-left: 4.5rem;
+  color: rgba(54, 83, 107, 0.55);
+  cursor: not-allowed;
+}
+.pricing-plan {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  align-items: center;
+  margin-bottom: 4.8rem;
+}
+.plan {
+  color: var(--primary-pink);
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 5.7rem;
+}
+.pricing-plan h1 {
+  font-size: 5.6rem;
+}
+.pricing-plan:last-child {
+  margin-bottom: 8.1rem;
+}
+.pricing-packages {
+  display: block;
+  color: #36536b;
+}
+.pricing-packages li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.underline {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(151, 151, 151, 0.35);
+}
+.btn-inner {
+  background-color: var(--background-color);
+  color: #36536b;
+  border: solid 1px rgba(54, 83, 107, 1);
+  align-self: center;
+}
+.cta {
+  margin-bottom: 8.1rem;
+}

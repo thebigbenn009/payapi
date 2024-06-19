@@ -1,6 +1,7 @@
 import { goals } from "@/SocialSvgs";
 import React from "react";
 import ScheduleDemo from "./ScheduleDemo";
+import Cta from "./Cta";
 
 const Goals = () => {
   return (
@@ -20,10 +21,7 @@ const Goals = () => {
           );
         })}
       </div>
-      <div className="cta">
-        <h2>Ready to start?</h2>
-        <ScheduleDemo />
-      </div>
+      <Cta />
     </section>
   );
 };

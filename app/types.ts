@@ -12,3 +12,14 @@ export type LinkType = {
 export type Icons = {
   icon: ReactElement;
 };
+
+export type PricingPlanType = {
+  plan: "free plan" | "basic plan" | "premium plan";
+  price: number;
+  packages: string[];
+  availablePackages: string[];
+  description?: string;
+
+  icon: ReactElement;
+};
+export type PricingPackages = PricingPlanType[];
