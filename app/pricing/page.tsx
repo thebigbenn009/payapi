@@ -8,7 +8,7 @@ const PricingPage = () => {
     <main>
       <div className="wrapper">
         <h1 className="pricing-h2">pricing</h1>
-        <div>
+        <div className="pricing-layout">
           {pricePackages.map((packagePlan) => {
             return <Plan key={packagePlan.plan} {...packagePlan} />;
           })}

@@ -222,6 +222,8 @@ export const pricePackages: PricingPackages = [
       "Liabilities",
       "Income",
     ],
+    description:
+      "Build and test using our core set of products with up to 100 API requests ",
     availablePackages: ["Transactions", "Auth", "Identity"],
     icon: (
       <svg
@@ -251,6 +253,8 @@ export const pricePackages: PricingPackages = [
       "Liabilities",
       "Income",
     ],
+    description:
+      "Launch your project with unlimited requests and no contractual minimums ",
     availablePackages: [
       "Transactions",
       "Auth",
@@ -286,6 +290,8 @@ export const pricePackages: PricingPackages = [
       "Liabilities",
       "Income",
     ],
+    description:
+      "Get tailored solutions, volume pricing, and dedicated support for your team ",
     availablePackages: [
       "Transactions",
       "Auth",

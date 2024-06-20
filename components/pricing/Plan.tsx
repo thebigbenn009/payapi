@@ -2,10 +2,12 @@ import { PricingPlanType } from "@/app/types";
 import React from "react";
 
 const Plan = (pricingPlan: PricingPlanType) => {
-  const { plan, price, packages, availablePackages, icon } = pricingPlan;
+  const { plan, price, packages, availablePackages, icon, description } =
+    pricingPlan;
   return (
     <article className="pricing-plan">
       <h3 className="plan">{plan}</h3>
+      <p className="pricing-description">{description}</p>
       <h1>${price}.00</h1>
       <div className="underline"></div>
       <ul className="pricing-packages">
