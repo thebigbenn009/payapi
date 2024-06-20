@@ -7,7 +7,7 @@ const AboutPage = () => {
   return (
     <main className="about">
       <h1 className="about-desc">
-        {/* We empower innovators by delivering access to the financial system */}
+        We empower innovators by delivering access to the financial system
       </h1>
       <About
         header="Our Vision"
