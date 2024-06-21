@@ -1,5 +1,5 @@
 import React from "react";
-import { Goal, PricingPackages } from "./app/types";
+import { Goal, NumberType, PricingPackages } from "./app/types";
 import { Icons } from "@/app/types";
 export const svgs = [
   {
@@ -316,5 +316,19 @@ export const pricePackages: PricingPackages = [
         />
       </svg>
     ),
+  },
+];
+export const numbers: NumberType[] = [
+  {
+    number: "300+",
+    label: "Team Members",
+  },
+  {
+    number: "3",
+    label: "Offices in the US",
+  },
+  {
+    number: "10M+",
+    label: "Transactions analyzed",
   },
 ];

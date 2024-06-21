@@ -23,3 +23,7 @@ export type PricingPlanType = {
   icon: ReactElement;
 };
 export type PricingPackages = PricingPlanType[];
+export type NumberType = {
+  number: "300+" | "3" | "10M+";
+  label: string;
+};
