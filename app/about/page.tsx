@@ -1,6 +1,8 @@
 import About from "@/components/About";
 import React from "react";
-import teamImage from "@/public/about/mobile/image-team-members.jpg";
+import phoneImg from "@/public/about/mobile/image-team-members.jpg";
+import tabImg from "@/public/about/tablet/image-team-members.jpg";
+import desktopImg from "@/public/about/desktop/image-team-members.jpg";
 import Image from "next/image";
 
 const AboutPage = () => {
@@ -17,9 +19,19 @@ const AboutPage = () => {
         header="Our Business"
         paragraph="At the core of our platform is the technical infrastructure APIs that connect consumers. Our innovative product provides key insights for businesses and individuals, as well as robust reporting for traditional financial institutions and developers. "
       />
-      <div className="image-container">
-        <Image src={teamImage} alt="team members" objectFit="cover" fill />
-      </div>
+
+      <picture>
+        <source srcSet={desktopImg.src} media="(min-width: 1200px)" />
+        <source srcSet={tabImg.src} media="(min-width: 768px)" />
+        <Image
+          className="about-img"
+          src={phoneImg}
+          alt="team members"
+          width={375}
+          height={300}
+          layout="responsive"
+        />
+      </picture>
     </main>
   );
 };
