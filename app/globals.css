@@ -176,9 +176,13 @@ input:focus {
 .socials-tab {
   display: none;
 }
-.social-img {
-  text-align: center;
+.socials-img {
+  display: flex;
+  justify-content: center;
 }
+/* .social-img {
+  text-align: center;
+} */
 .social-flex {
   display: flex;
   flex-direction: column-reverse;
@@ -361,6 +365,9 @@ ul li .links {
 @media only screen and (min-width: 425px) {
   .wrapper {
     max-width: 37.7rem;
+  }
+  .ui-text {
+    margin-top: 5rem;
   }
 }
 /* MEDIA QUERY FOR TABLETS */

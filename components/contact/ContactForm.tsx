@@ -1,32 +1,61 @@
-import React from "react";
+"use client";
+import { log } from "console";
+import React, { useState } from "react";
 
 const ContactForm = () => {
+  const [isError, setIsError] = useState(false);
+  const handleSubit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.target as HTMLFormElement);
+    const data = Object.fromEntries(formData.entries());
+    const values = Object.values(data);
+    const emptyFields = values.includes("");
+    if (emptyFields) {
+      setIsError(true);
+      return;
+    } else {
+      setIsError(false);
+    }
+  };
   return (
-    <form className="contact-form">
+    <form className="contact-form" onSubmit={handleSubit}>
       <div className="form-children">
         <label htmlFor="name"></label>
-        <input id="name" type="text" placeholder="Name" />
-        <div className="underline underline-contact"></div>
+        <input id="name" type="text" name="name" placeholder="Name" />
+        <div
+          className="underline underline-contact"
+          style={{ backgroundColor: i }}
+        ></div>
       </div>
       <div className="form-children">
         <label htmlFor="email"></label>
-        <input id="email" type="email" placeholder="Email Address" />
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Email Address"
+        />
         <div className="underline underline-contact"></div>
       </div>
       <div className="form-children">
         <label htmlFor="companyName"></label>
-        <input id="companyName" type="text" placeholder="Compamy's Name" />
+        <input
+          id="companyName"
+          name="company"
+          type="text"
+          placeholder="Compamy's Name"
+        />
         <div className="underline underline-contact"></div>
       </div>
       <div className="form-children">
         <label htmlFor="title"></label>
-        <input id="title" type="text" placeholder="Title" />
+        <input id="title" type="text" name="title" placeholder="Title" />
         <div className="underline underline-contact"></div>
       </div>
       <div className="form-children">
         <label htmlFor="message"></label>
         <textarea
-          name=""
+          name="message"
           id="message"
           placeholder="message"
           rows={4}
