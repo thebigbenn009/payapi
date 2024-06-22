@@ -21,15 +21,6 @@ const SocialProof = () => {
           <Image src={socials} alt="socials" className="socials-mobile" />
           <Image src={socialsTab} alt="socials" className="socials-tab" />
         </div>
-        {/* <div className="social-companies">
-          {svgs.map((svg, index) => {
-            return (
-              <div className="social-icons" key={index}>
-                {svg.icon}
-              </div>
-            );
-          })}
-        </div> */}
       </div>
     </section>
   );

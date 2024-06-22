@@ -6,14 +6,14 @@ import desktopImg from "@/public/about/desktop/image-team-members.jpg";
 import Image from "next/image";
 import Numbers from "@/components/about/Numbers";
 import ScheduleDemo from "@/components/home page/ScheduleDemo";
+import Cta from "@/components/home page/Cta";
+import InnerHeader from "@/components/about/InnerHeader";
 
 const AboutPage = () => {
   return (
     <main className="about">
       <div className="wrapper">
-        <h1 className="about-desc">
-          We empower innovators by delivering access to the financial system
-        </h1>
+        <InnerHeader desc="  We empower innovators by delivering access to the financial system" />
         <About
           header="Our Vision"
           paragraph="Our main goal is to build beautiful consumer experiences along with developer-friendly infrastructure. The result is an intelligent tool that gives everyone the ability to create amazing products that solve big problems. We are deeply focused on democratizing financial services through technology. "
@@ -24,7 +24,7 @@ const AboutPage = () => {
         />
       </div>
       <picture>
-        <source srcSet={desktopImg.src} media="(min-width: 1200px)" />
+        <source srcSet={desktopImg.src} media="(min-width: 1024px)" />
         <source srcSet={tabImg.src} media="(min-width: 768px)" />
         <Image
           className="about-img"
@@ -45,7 +45,7 @@ const AboutPage = () => {
           header="The People"
           paragraph=" We're all passionate about building a more efficient and inclusive financial infrastructure together. At PayAPI, we have diverse backgrounds and skills."
         />
-        <ScheduleDemo />
+        <Cta />
       </div>
     </main>
   );
