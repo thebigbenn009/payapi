@@ -1037,6 +1037,9 @@ ul li .links {
   }
 }
 /* CONTACT PAGE */
+.contact-form > * {
+  color: var(--secondary-light-blue);
+}
 .contact-form {
   display: grid;
   gap: 1.4rem;
@@ -1061,7 +1064,9 @@ ul li .links {
 .checkbox {
   transform: scale(1.5);
 }
-
+input::placeholder {
+  color: var(--secondary-light-blue);
+}
 .form-check {
   display: flex;
   gap: 2.6rem;
@@ -1125,7 +1130,7 @@ ul li .links {
     margin-inline: 0;
     margin-bottom: 0;
   }
-  .underline {
+  .underline-contact {
     margin-block: 0;
   }
   .btn-contact {
@@ -1162,7 +1167,7 @@ ul li .links {
     margin-inline: 0;
     margin-bottom: 0;
   }
-  .underline {
+  .underline-contact {
     margin-block: 0;
   }
   .btn-contact {

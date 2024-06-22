@@ -1,5 +1,5 @@
 import React from "react";
-import NavLeft from "./NavLeft";
+
 import { icons } from "@/SocialSvgs";
 import FooterNav from "./FooterNav";
 
