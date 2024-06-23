@@ -3,6 +3,7 @@ import React from "react";
 import socials from "@/public/home/desktop/socials.svg";
 import socialsTab from "@/public/home/desktop/socials-tab.svg";
 import Image from "next/image";
+import Link from "next/link";
 const SocialProof = () => {
   return (
     <section className="social-section">
@@ -15,7 +16,10 @@ const SocialProof = () => {
             developers with the tools they need to create easy and accessible
             experiences for their users.
           </p>
-          <button className="btn btn-small">About us</button>
+
+          <Link href="/about" className="btn btn-small">
+            About Us
+          </Link>
         </div>
         <div className="socials-img">
           <Image src={socials} alt="socials" className="socials-mobile" />

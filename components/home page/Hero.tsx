@@ -5,6 +5,7 @@ import phoneTab from "../../public/home/desktop/phone-tab-version.svg";
 import phoneDesktop from "../../public/home/desktop/phone-desktop.svg";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -24,7 +25,9 @@ const Hero = () => {
                 Schedule a Demo
               </button>
             </form>
-            <p className="contact-p">Have any questions? Contact Us</p>
+            <p className="contact-p">
+              Have any questions? <Link href="/contact">Contact Us</Link>
+            </p>
           </div>
           <div className="hero-img">
             <Image className="hero-phone" src={phone} alt="phone" />
