@@ -1003,6 +1003,9 @@ ul li .links {
 .num .underline {
   display: none;
 }
+.underline-contact {
+  margin-block: 0;
+}
 /* MEDIA QUERY FOR TABLETS */
 @media only screen and (min-width: 728px) {
   .about-desc {
